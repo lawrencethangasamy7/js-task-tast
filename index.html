@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>
+     Sig In
+</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<style>
+		#inputbox{
+		width:25%;
+		flex-wrap:wrap;
+	}
+	
+	input{
+	padding:15px;
+	}
+	button{
+	padding:15px;
+	}
+	</style>
+<body>
+		<section id="inputbox">
+			<form>
+				<input type="password" id="phone" placeholder="number">
+				<input type="password" id="phon" placeholder="number">
+				<div class="result"></div>
+				
+				<button>CONTINUE</button>
+			</form>
+		</section>	
+	
+	<script>
+		let input=document.querySelector('form');
+		input.addEventListener('submit',function(ku)
+		{
+		ku.preventDefault();
+		
+		
+		let sum=document.querySelector('#phone').value;
+		let sum1=document.querySelector('#phon').value;
+		let sum3=document.querySelector('.result');
+		 if(sum!==sum1)
+			{
+			sum3.innerText="plase value Enter";
+			sum3.style.color="red";
+			}
+		else{
+		alert('crt da laal')
+		}
+		
+		})
+		
+	</script>
+	</body>
+</html>
